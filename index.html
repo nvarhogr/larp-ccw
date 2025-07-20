@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCW Permit Lookup</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CCW Permits</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css');
+    </style>
 </head>
-<body class="bg-gray-100 min-h-screen">
+<body class="bg-gray-900 min-h-screen text-gray-100">
     <div class="container mx-auto px-4 py-8">
         <header class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-gray-800 mb-2">CCW Permits - Coded by @alexjohn_</h1>
-            <p class="text-gray-600">Search and view concealed carry weapon permits</p>
+            <h1 class="text-3xl font-bold text-gray-100 mb-2">CCW Permits - Coded by @alexjohn_</h1>
+            <p class="text-gray-400">Search and view concealed carry weapon permits</p>
         </header>
 
         <div class="max-w-md mx-auto mb-8">
@@ -19,7 +22,7 @@
                     type="text" 
                     id="searchInput" 
                     placeholder="Search by Roblox username..."
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    class="w-full px-4 py-2 border border-gray-600 bg-gray-800 text-gray-100 placeholder-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
                 <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
                     <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,6 +30,16 @@
                     </svg>
                 </div>
             </div>
+        </div>
+
+        <div class="text-center mb-4">
+            <span id="resultsCount" class="text-gray-400">Showing all permits</span>
+        </div>
+        
+        <div class="text-center mb-6">
+            <button id="themeToggle" class="bg-gray-700 hover:bg-gray-600 text-gray-100 px-4 py-2 rounded-lg transition-colors">
+                Switch to Light Theme
+            </button>
         </div>
 
         <div class="text-center mb-4">
@@ -2717,6 +2730,86 @@
                 </div>
             </div>
 
+             <div class="permit-card bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">FUNKE_RRR</h3>
+                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Active</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Discord:</span>
+                        <span class="font-medium">FUNKE_RRR</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Roblox:</span>
+                        <span class="font-medium roblox-username">FUNKE_RRR</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Weapons:</span>
+                        <span class="font-medium">LMT L129A1 and M911</span>
+                    </div>
+                </div>
+            </div>
+            <div class="permit-card bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">aquamonkeahh</h3>
+                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Active</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Discord:</span>
+                        <span class="font-medium">aquamonkeahh</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Roblox:</span>
+                        <span class="font-medium roblox-username">cooldude474749</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Weapons:</span>
+                        <span class="font-medium">LMT L129A1, Beretta M9, colt M911, desert eagle</span>
+                    </div>
+                </div>
+            </div>
+            <div class="permit-card bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">kobiiscool5</h3>
+                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Active</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Discord:</span>
+                        <span class="font-medium">kobiiscool5</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Roblox:</span>
+                        <span class="font-medium roblox-username">kobiiscool5</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Weapons:</span>
+                        <span class="font-medium">LMT L129A1 and Beretta M9</span>
+                    </div>
+                </div>
+            </div>
+            <div class="permit-card bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">fallen_emp1re</h3>
+                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Active</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Discord:</span>
+                        <span class="font-medium">fallen_emp1re</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Roblox:</span>
+                        <span class="font-medium roblox-username">Chatlog_camper</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Weapons:</span>
+                        <span class="font-medium">LMT L129A1, M911, Desert eagle, beretta M9, M14, Skorpion, TEC-9</span>
+                    </div>
+                </div>
+            </div>
             <div class="permit-card bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
                 <div class="flex items-center justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800">nathan._.0205</h3>
@@ -2795,6 +2888,59 @@
     </div>
 
     <script>
+
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const isDark = localStorage.getItem('darkTheme') === 'true';
+        
+        setTheme(isDark);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentlyDark = body.classList.contains('bg-gray-900');
+            setTheme(!currentlyDark);
+            localStorage.setItem('darkTheme', (!currentlyDark).toString());
+        });
+        
+        function setTheme(isDark) {
+            if (isDark) {
+                body.className = 'bg-gray-900 min-h-screen text-gray-100';
+                themeToggle.textContent = 'Switch to Light Theme';
+                
+                document.querySelector('h1').className = 'text-3xl font-bold text-gray-100 mb-2';
+                document.querySelector('header p').className = 'text-gray-400';
+                document.getElementById('searchInput').className = 'w-full px-4 py-2 border border-gray-600 bg-gray-800 text-gray-100 placeholder-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent';
+                document.getElementById('resultsCount').className = 'text-gray-400';
+                
+                document.querySelectorAll('.permit-card').forEach(card => {
+                    card.className = card.className.replace('bg-white', 'bg-gray-800').replace('shadow-md', 'shadow-lg');
+                    card.querySelectorAll('h3').forEach(h3 => h3.className = h3.className.replace('text-gray-800', 'text-gray-100'));
+                    card.querySelectorAll('.text-gray-600').forEach(el => el.className = el.className.replace('text-gray-600', 'text-gray-400'));
+                    card.querySelectorAll('.font-medium').forEach(el => {
+                        if (!el.className.includes('text-')) {
+                            el.className += ' text-gray-100';
+                        }
+                    });
+                });
+            } else {
+                body.className = 'bg-gray-100 min-h-screen';
+                themeToggle.textContent = 'Switch to Dark Theme';
+                
+                document.querySelector('h1').className = 'text-3xl font-bold text-gray-800 mb-2';
+                document.querySelector('header p').className = 'text-gray-600';
+                document.getElementById('searchInput').className = 'w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent';
+                document.getElementById('resultsCount').className = 'text-gray-600';
+                
+                document.querySelectorAll('.permit-card').forEach(card => {
+                    card.className = card.className.replace('bg-gray-800', 'bg-white').replace('shadow-lg', 'shadow-md');
+                    card.querySelectorAll('h3').forEach(h3 => h3.className = h3.className.replace('text-gray-100', 'text-gray-800'));
+                    card.querySelectorAll('.text-gray-400').forEach(el => el.className = el.className.replace('text-gray-400', 'text-gray-600'));
+                    card.querySelectorAll('.font-medium').forEach(el => {
+                        el.className = el.className.replace(' text-gray-100', '');
+                    });
+                });
+            }
+        }
+
         const searchInput = document.getElementById('searchInput');
         const permitCards = document.querySelectorAll('.permit-card');
         const resultsCount = document.getElementById('resultsCount');
