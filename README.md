@@ -38,7 +38,7 @@ Keep in mind there are two of them one is without the @ which is the first one a
 For instance, if I were to do it for myself I would do:
 
 <!----------------------------------------------------------------------->
-<div id="permitGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id="permitGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="permit-card bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
             <div class="flex items-center justify-between mb-4">
                 <h3 class="text-lg font-semibold text-gray-800">Alexjohn_</h3>
