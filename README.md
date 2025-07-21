@@ -64,4 +64,12 @@ For instance, if I were to do it for myself I would do:
   The rest is super easy, just go to the index.html page click on the pen icon to enter editing mode and paste this section. BUT you need to know where to paste it, you can't just past it where you like..
 
 If you look closely, I added a note at line 50. You need to past this section of code right below my note so right below line 50. 
-  
+
+Additionally if you would like to remove someone's CCW, you can do two things:
+1. Remove the entire section (Not reccomended)
+2. Edit two basic things in the code.
+
+Go to the fifth line of the code and find the word "active", replace it with "Suspended". Additionally go a few words back and you can see "bg-green-100 text-green-800", replace both 'green's with 'red'.
+
+
+YOUR JOB IS TO ONLY ADD/REMOVE/EDIT CCW PERMITS, MESSING WITH ANY OTHER PART OF THE CODE WILL RESULT IN HEAVY CONSEQUENCES. I ALREADY HAVE BACKUP OF THIS CODE SO DON'T TRY TO MAKE THE WEBSITE GO DOWN OR SOMETHING, ADDITIONALLY IF YOU MAKE ANY MISTAKES DON'T COMMIT CHANGES AND GO BACK THEN START ALL OVER AGAIN. IF NEEDED ONLY PING @ALEXJOHN_ AS HE IS THE DEVELOPER. 
