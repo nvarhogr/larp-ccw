@@ -63,4 +63,5 @@ For instance, if I were to do it for myself I would do:
 
   The rest is super easy, just go to the index.html page click on the pen icon to enter editing mode and paste this section. BUT you need to know where to paste it, you can't just past it where you like..
 
+If you look closely, I added a note at line 50. You need to past this section of code right below my note so right below line 50. 
   
